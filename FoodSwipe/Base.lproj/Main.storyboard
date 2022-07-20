@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FoodPiper-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="firstView" id="BYZ-38-t0r" customClass="ViewController" customModule="FoodSwipe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Swipe To Choose Food Types" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RZi-jR-muZ">
+                                <rect key="frame" x="74" y="777" width="266" height="41"/>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.35686274509803922" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="ZBl-lx-nj4"/>
+                                </constraints>
+                                <color key="textColor" red="0.97744000980000001" green="1" blue="0.97424701690000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" red="0.49444796954314718" green="0.49444796954314718" blue="0.49444796954314718" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tl0-XJ-m19" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="52" y="142" width="297" height="627"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tl0-XJ-m19" secondAttribute="bottom" constant="93" id="2vR-m3-c6h"/>
+                            <constraint firstItem="tl0-XJ-m19" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="98" id="5EZ-A0-rxj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RZi-jR-muZ" secondAttribute="bottom" constant="44" id="OXm-Vy-vYy"/>
+                            <constraint firstItem="RZi-jR-muZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S2b-oK-X1W"/>
+                            <constraint firstAttribute="trailing" secondItem="tl0-XJ-m19" secondAttribute="trailing" constant="65" id="SnE-GF-g56"/>
+                            <constraint firstItem="tl0-XJ-m19" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="TRJ-0w-8Nq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="FoodPiper" id="qyL-p4-UaK">
+                        <barButtonItem key="leftBarButtonItem" title="Restart" id="U55-gf-Rg6">
+                            <connections>
+                                <action selector="restartAppButton:" destination="BYZ-38-t0r" id="Zkk-gu-ef6"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Undo" id="axh-1D-JS4">
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="restartChoiceClicked:" destination="BYZ-38-t0r" id="eRL-S5-FNf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="foodCategory" destination="RZi-jR-muZ" id="Sz8-6f-xEC"/>
+                        <outlet property="kView" destination="tl0-XJ-m19" id="B6F-d6-Ddf"/>
+                        <outlet property="resetChoices" destination="axh-1D-JS4" id="T9X-m9-dbd"/>
+                        <outlet property="restartWholeApp" destination="U55-gf-Rg6" id="NSH-ud-o18"/>
+                        <segue destination="Rgc-x8-vMv" kind="presentation" identifier="finalChooser" modalTransitionStyle="flipHorizontal" id="7xa-sV-ski"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1628.985507246377" y="67.633928571428569"/>
+        </scene>
+        <!--Final Food Chooser View Controller-->
+        <scene sceneID="4Q2-Vd-ztN">
+            <objects>
+                <viewController storyboardIdentifier="finalTwo" id="Rgc-x8-vMv" customClass="finalFoodChooserViewController" customModule="FoodSwipe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ay1-Qp-syP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yVj-Tq-Bpr">
+                                <rect key="frame" x="16" y="82" width="382" height="370.5"/>
+                                <subviews>
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zXV-vR-ypf">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="117.5"/>
+                                        <color key="backgroundColor" red="0.95686274510000002" green="0.35686274509999999" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.97744000980000001" green="1" blue="0.97424701690000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pTb-G5-gZB">
+                                        <rect key="frame" x="0.0" y="125.5" width="382" height="245"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZBm-xM-zqZ">
+                                <rect key="frame" x="16" y="460.5" width="382" height="370.5"/>
+                                <subviews>
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Hn-iB-2St">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="117.5"/>
+                                        <color key="backgroundColor" red="0.95686274510000002" green="0.35686274509999999" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.97744000980000001" green="1" blue="0.97424701690000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2pk-it-uLH">
+                                        <rect key="frame" x="0.0" y="125.5" width="382" height="245"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXj-bW-Awx">
+                                <rect key="frame" x="16" y="0.0" width="382" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="XOw-Ck-ubj"/>
+                                </constraints>
+                                <string key="text">Select Your Food Choice To See Nearby Restaurants                                                                       OR swipe right to reset</string>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d79-Bz-hec">
+                                <rect key="frame" x="16" y="82" width="382" height="370.5"/>
+                                <connections>
+                                    <action selector="leftChoiceClicked:" destination="Rgc-x8-vMv" eventType="touchUpInside" id="uWS-qx-sPP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kim-Sy-USk">
+                                <rect key="frame" x="16" y="461" width="382" height="370"/>
+                                <connections>
+                                    <action selector="rightChoiceClicked:" destination="Rgc-x8-vMv" eventType="touchUpInside" id="LFE-Ol-tGk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fBz-IP-JVI"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ZBm-xM-zqZ" firstAttribute="top" secondItem="yVj-Tq-Bpr" secondAttribute="bottom" constant="8" id="1Ye-e0-WM2"/>
+                            <constraint firstItem="yVj-Tq-Bpr" firstAttribute="bottom" secondItem="d79-Bz-hec" secondAttribute="bottom" id="69e-Cc-qBw"/>
+                            <constraint firstItem="fBz-IP-JVI" firstAttribute="trailing" secondItem="ZBm-xM-zqZ" secondAttribute="trailing" constant="16" id="C3H-eb-leT"/>
+                            <constraint firstItem="yVj-Tq-Bpr" firstAttribute="leading" secondItem="Kim-Sy-USk" secondAttribute="leading" id="ERn-AU-xfl"/>
+                            <constraint firstItem="fBz-IP-JVI" firstAttribute="trailing" secondItem="nXj-bW-Awx" secondAttribute="trailing" constant="16" id="F23-Kx-ZNk"/>
+                            <constraint firstItem="nXj-bW-Awx" firstAttribute="leading" secondItem="fBz-IP-JVI" secondAttribute="leading" constant="16" id="I45-6C-NKV"/>
+                            <constraint firstItem="fBz-IP-JVI" firstAttribute="trailing" secondItem="yVj-Tq-Bpr" secondAttribute="trailing" constant="16" id="Iat-cD-Ygd"/>
+                            <constraint firstItem="nXj-bW-Awx" firstAttribute="top" secondItem="fBz-IP-JVI" secondAttribute="top" id="JXX-Wk-cLH"/>
+                            <constraint firstItem="fBz-IP-JVI" firstAttribute="bottom" secondItem="Kim-Sy-USk" secondAttribute="bottom" constant="11" id="RNJ-nP-uvP"/>
+                            <constraint firstItem="yVj-Tq-Bpr" firstAttribute="leading" secondItem="d79-Bz-hec" secondAttribute="leading" id="RnM-1b-yaY"/>
+                            <constraint firstItem="yVj-Tq-Bpr" firstAttribute="top" secondItem="nXj-bW-Awx" secondAttribute="bottom" constant="8" id="Rre-Bo-3Vj"/>
+                            <constraint firstItem="yVj-Tq-Bpr" firstAttribute="trailing" secondItem="Kim-Sy-USk" secondAttribute="trailing" id="TM6-bZ-lah"/>
+                            <constraint firstItem="yVj-Tq-Bpr" firstAttribute="leading" secondItem="fBz-IP-JVI" secondAttribute="leading" constant="16" id="VWl-hJ-OLM"/>
+                            <constraint firstItem="yVj-Tq-Bpr" firstAttribute="height" secondItem="ZBm-xM-zqZ" secondAttribute="height" id="Xiw-eb-UAF"/>
+                            <constraint firstItem="yVj-Tq-Bpr" firstAttribute="top" secondItem="d79-Bz-hec" secondAttribute="top" id="ZKz-GF-Z8d"/>
+                            <constraint firstItem="ZBm-xM-zqZ" firstAttribute="leading" secondItem="fBz-IP-JVI" secondAttribute="leading" constant="16" id="aD9-az-lWK"/>
+                            <constraint firstItem="fBz-IP-JVI" firstAttribute="bottom" secondItem="ZBm-xM-zqZ" secondAttribute="bottom" constant="11" id="bmH-DZ-ivt"/>
+                            <constraint firstItem="Kim-Sy-USk" firstAttribute="top" secondItem="yVj-Tq-Bpr" secondAttribute="bottom" constant="8.3300000000000001" id="dVS-SH-OEL"/>
+                            <constraint firstItem="yVj-Tq-Bpr" firstAttribute="trailing" secondItem="d79-Bz-hec" secondAttribute="trailing" id="su5-MJ-lOb"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="gmG-q6-fs0" appends="YES" id="ZoU-rE-gb1"/>
+                        </connections>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="lastFoodLeft" destination="zXV-vR-ypf" id="LTM-s4-vhg"/>
+                        <outlet property="lastFoodRight" destination="3Hn-iB-2St" id="8Xd-IL-4xR"/>
+                        <outlet property="leftButtonClicked" destination="d79-Bz-hec" id="mn1-HI-Vtk"/>
+                        <outlet property="leftFoodPic" destination="pTb-G5-gZB" id="7iI-KK-6Qw"/>
+                        <outlet property="rightButtonClicked" destination="Kim-Sy-USk" id="2Ov-HB-PcD"/>
+                        <outlet property="rightFoodPic" destination="2pk-it-uLH" id="Wsz-s0-jaC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C1g-cs-D3x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="W6g-JP-bDT" userLabel="Exit" sceneMemberID="exit"/>
+                <swipeGestureRecognizer direction="right" id="gmG-q6-fs0">
+                    <connections>
+                        <action selector="exitSecondScreen:" destination="W6g-JP-bDT" id="RXb-Fw-lfk"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2437.68115942029" y="66.84782608695653"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

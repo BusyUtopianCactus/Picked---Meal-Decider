@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30917C872858D76E00A8B7B7 /* foodObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30917C862858D76E00A8B7B7 /* foodObj.swift */; };
+		30917C892858DBAB00A8B7B7 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30917C882858DBAB00A8B7B7 /* Queue.swift */; };
+		450B9CF62107A01E008A9E96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450B9CF52107A01E008A9E96 /* AppDelegate.swift */; };
+		450B9CF82107A01E008A9E96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450B9CF72107A01E008A9E96 /* ViewController.swift */; };
+		450B9CFB2107A01E008A9E96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450B9CF92107A01E008A9E96 /* Main.storyboard */; };
+		450B9CFD2107A020008A9E96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450B9CFC2107A020008A9E96 /* Assets.xcassets */; };
+		450B9D002107A020008A9E96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450B9CFE2107A020008A9E96 /* LaunchScreen.storyboard */; };
+		4541F484211A586900E7B7F8 /* SwipeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541F483211A586900E7B7F8 /* SwipeDemo.swift */; };
+		45FE32C82112543C00B6A1B1 /* finalFoodChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FE32C72112543C00B6A1B1 /* finalFoodChooserViewController.swift */; };
+		6AE4F05154D6EB9137ADC362 /* Pods_FoodSwipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E325F9212FEAD8BEF45C39E0 /* Pods_FoodSwipe.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02639E1C7BE56CF9A5F49EF4 /* Pods-FoodSwipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodSwipe.debug.xcconfig"; path = "Target Support Files/Pods-FoodSwipe/Pods-FoodSwipe.debug.xcconfig"; sourceTree = "<group>"; };
+		1666C3E51767BF41E726F65C /* Pods-FoodSwipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodSwipe.release.xcconfig"; path = "Target Support Files/Pods-FoodSwipe/Pods-FoodSwipe.release.xcconfig"; sourceTree = "<group>"; };
+		30917C862858D76E00A8B7B7 /* foodObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodObj.swift; sourceTree = "<group>"; };
+		30917C882858DBAB00A8B7B7 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		450B9CF22107A01E008A9E96 /* FoodSwipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodSwipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		450B9CF52107A01E008A9E96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		450B9CF72107A01E008A9E96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		450B9CFA2107A01E008A9E96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		450B9CFC2107A020008A9E96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		450B9CFF2107A020008A9E96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		450B9D012107A020008A9E96 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4541F483211A586900E7B7F8 /* SwipeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeDemo.swift; sourceTree = "<group>"; };
+		45FE32C72112543C00B6A1B1 /* finalFoodChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalFoodChooserViewController.swift; sourceTree = "<group>"; };
+		E325F9212FEAD8BEF45C39E0 /* Pods_FoodSwipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodSwipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		450B9CEF2107A01E008A9E96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AE4F05154D6EB9137ADC362 /* Pods_FoodSwipe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		450B9CE92107A01E008A9E96 = {
+			isa = PBXGroup;
+			children = (
+				450B9CF42107A01E008A9E96 /* FoodSwipe */,
+				450B9CF32107A01E008A9E96 /* Products */,
+				F155AD6D3270FD2361EB50B0 /* Pods */,
+				4FBFA3542E43D0E5840EADFC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		450B9CF32107A01E008A9E96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				450B9CF22107A01E008A9E96 /* FoodSwipe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		450B9CF42107A01E008A9E96 /* FoodSwipe */ = {
+			isa = PBXGroup;
+			children = (
+				450B9CF52107A01E008A9E96 /* AppDelegate.swift */,
+				450B9CF72107A01E008A9E96 /* ViewController.swift */,
+				45FE32C72112543C00B6A1B1 /* finalFoodChooserViewController.swift */,
+				450B9CF92107A01E008A9E96 /* Main.storyboard */,
+				450B9CFC2107A020008A9E96 /* Assets.xcassets */,
+				450B9CFE2107A020008A9E96 /* LaunchScreen.storyboard */,
+				450B9D012107A020008A9E96 /* Info.plist */,
+				4541F483211A586900E7B7F8 /* SwipeDemo.swift */,
+				30917C862858D76E00A8B7B7 /* foodObj.swift */,
+				30917C882858DBAB00A8B7B7 /* Queue.swift */,
+			);
+			path = FoodSwipe;
+			sourceTree = "<group>";
+		};
+		4FBFA3542E43D0E5840EADFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E325F9212FEAD8BEF45C39E0 /* Pods_FoodSwipe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F155AD6D3270FD2361EB50B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02639E1C7BE56CF9A5F49EF4 /* Pods-FoodSwipe.debug.xcconfig */,
+				1666C3E51767BF41E726F65C /* Pods-FoodSwipe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		450B9CF12107A01E008A9E96 /* FoodSwipe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 450B9D042107A020008A9E96 /* Build configuration list for PBXNativeTarget "FoodSwipe" */;
+			buildPhases = (
+				A881CEA284F85F0C10E41B6A /* [CP] Check Pods Manifest.lock */,
+				450B9CEE2107A01E008A9E96 /* Sources */,
+				450B9CEF2107A01E008A9E96 /* Frameworks */,
+				450B9CF02107A01E008A9E96 /* Resources */,
+				C6E01FCA10BEB6D5561C794D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoodSwipe;
+			productName = FoodSwipe;
+			productReference = 450B9CF22107A01E008A9E96 /* FoodSwipe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		450B9CEA2107A01E008A9E96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 1330;
+				ORGANIZATIONNAME = MakeSchool;
+				TargetAttributes = {
+					450B9CF12107A01E008A9E96 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1330;
+					};
+				};
+			};
+			buildConfigurationList = 450B9CED2107A01E008A9E96 /* Build configuration list for PBXProject "FoodSwipe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 450B9CE92107A01E008A9E96;
+			productRefGroup = 450B9CF32107A01E008A9E96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				450B9CF12107A01E008A9E96 /* FoodSwipe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		450B9CF02107A01E008A9E96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				450B9D002107A020008A9E96 /* LaunchScreen.storyboard in Resources */,
+				450B9CFD2107A020008A9E96 /* Assets.xcassets in Resources */,
+				450B9CFB2107A01E008A9E96 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A881CEA284F85F0C10E41B6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodSwipe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6E01FCA10BEB6D5561C794D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodSwipe/Pods-FoodSwipe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodSwipe/Pods-FoodSwipe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodSwipe/Pods-FoodSwipe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		450B9CEE2107A01E008A9E96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4541F484211A586900E7B7F8 /* SwipeDemo.swift in Sources */,
+				30917C892858DBAB00A8B7B7 /* Queue.swift in Sources */,
+				450B9CF82107A01E008A9E96 /* ViewController.swift in Sources */,
+				45FE32C82112543C00B6A1B1 /* finalFoodChooserViewController.swift in Sources */,
+				450B9CF62107A01E008A9E96 /* AppDelegate.swift in Sources */,
+				30917C872858D76E00A8B7B7 /* foodObj.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		450B9CF92107A01E008A9E96 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				450B9CFA2107A01E008A9E96 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		450B9CFE2107A020008A9E96 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				450B9CFF2107A020008A9E96 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		450B9D022107A020008A9E96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		450B9D032107A020008A9E96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		450B9D052107A020008A9E96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02639E1C7BE56CF9A5F49EF4 /* Pods-FoodSwipe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZWTJU2A46F;
+				INFOPLIST_FILE = FoodSwipe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DanielBasman.FoodPiper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		450B9D062107A020008A9E96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1666C3E51767BF41E726F65C /* Pods-FoodSwipe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZWTJU2A46F;
+				INFOPLIST_FILE = FoodSwipe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DanielBasman.FoodPiper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		450B9CED2107A01E008A9E96 /* Build configuration list for PBXProject "FoodSwipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				450B9D022107A020008A9E96 /* Debug */,
+				450B9D032107A020008A9E96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		450B9D042107A020008A9E96 /* Build configuration list for PBXNativeTarget "FoodSwipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				450B9D052107A020008A9E96 /* Debug */,
+				450B9D062107A020008A9E96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 450B9CEA2107A01E008A9E96 /* Project object */;
+}
